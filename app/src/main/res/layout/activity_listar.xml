@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ListarActivity">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="402dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="109dp" />
+
+    <Button
+        android:id="@+id/btn_favoritos"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp"
+        android:text="Favoritos" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_favoritos"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="9dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/txt_listagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/list"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-109dp"
+        android:text="Listagem Completa"
+        android:textSize="20sp" />
+
+</RelativeLayout>
